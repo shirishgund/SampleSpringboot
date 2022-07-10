@@ -1,5 +1,7 @@
 FROM maven:3.6.0-jdk-11-slim AS build
-RUN mvn -f pom.xml clean package
+COPY src /usr/src/app/src  
+COPY pom.xml /usr/src/app  
+RUN mvn -f /usr/src/app/pom.xml clean package
 FROM openjdk:8-jdk-alpine
-ADD target/*.jar SampleTest-0.0.3-SNAPSHOT.jar
+ADD /usr/src/app/target/*.jar SampleTest-0.0.3-SNAPSHOT.jar
 ENTRYPOINT ["java","-jar","/SampleTest-0.0.3-SNAPSHOT.jar"]
