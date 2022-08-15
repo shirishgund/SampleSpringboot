@@ -1,3 +1,3 @@
 FROM openjdk:8-jdk-alpine
-ADD /var/lib/jenkins/workspace/Docker_demo/target/sampletest-0.0.2-snapshot.jar  sampletest-0.0.2-snapshot.jar
+ADD  target/sampletest-0.0.2-snapshot.jar  sampletest-0.0.2-snapshot.jar
 ENTRYPOINT ["java","-jar","/sampletest-0.0.2-snapshot.jar"]
