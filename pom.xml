@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.telusko</groupId>
-	<artifactId>SampleTest</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<artifactId>sampletest</artifactId>
+	<version>0.0.2-snapshot</version>
 	<name>SampleTest-1</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
