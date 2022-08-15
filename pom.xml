@@ -11,7 +11,7 @@
 	<groupId>com.telusko</groupId>
 	<artifactId>sampletest</artifactId>
 	<version>0.0.2-snapshot</version>
-	<name>SampleTest-1</name>
+	<name>sampletest-1</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
